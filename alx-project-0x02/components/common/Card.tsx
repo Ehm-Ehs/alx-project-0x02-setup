@@ -1,9 +1,9 @@
 import React from "react";
-import { CardProps } from "@/interfaces";
+import { type CardProps } from "@/interfaces";
 
 const Card: React.FC<CardProps> = ({ title, content }) => (
-  <div className="border p-4 rounded shadow">
-    <h2 className="font-bold">{title}</h2>
+  <div className="border p-4 rounded shadow mb-4">
+    <h2 className="font-bold text-lg">{title}</h2>
     <p>{content}</p>
   </div>
 );
