@@ -5,6 +5,8 @@ export interface CardProps {
   export interface ButtonProps {
     label: string;
     onClick?: () => void;
+    size?: "small" | "medium" | "large";
+    shape?: "rounded-sm" | "rounded-md";
   }
   
 export interface PostProps {
