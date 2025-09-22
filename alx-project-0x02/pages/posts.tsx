@@ -1,6 +1,7 @@
 import React from "react";
 import PostCard from "../components/common/PostCard";
 import { PostProps } from "../interfaces";
+import Header from "@/components/layout/Header";
 
 interface PostsPageProps {
   posts: PostProps[];
@@ -9,6 +10,7 @@ interface PostsPageProps {
 const PostsPage: React.FC<PostsPageProps> = ({ posts }) => {
   return (
     <div className="p-8">
+      <Header />
       <h1 className="text-2xl font-bold mb-6">Posts</h1>
       <div className="space-y-4">
         {posts.map((post) => (
