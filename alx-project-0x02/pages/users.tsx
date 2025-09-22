@@ -1,6 +1,7 @@
 import React from "react";
 import { UserProps } from "../interfaces";
 import UserCard from "@/components/common/UserCard";
+import Header from "@/components/layout/Header";
 
 interface UsersPageProps {
   users: UserProps[];
@@ -9,6 +10,7 @@ interface UsersPageProps {
 const UsersPage: React.FC<UsersPageProps> = ({ users }) => {
   return (
     <div className="p-8">
+      <Header />
       <h1 className="text-2xl font-bold mb-6">Users</h1>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {users.map((user) => (
